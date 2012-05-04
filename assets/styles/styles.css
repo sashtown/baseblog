@@ -1,0 +1,241 @@
+/***********************************************************************************************************************
+
+****** Baseblog Kirby Theme ******
+
+*** URL: http://kirbyblog.sashtown.de
+*** Author: Sascha Lack
+*** Author URI: http://slstudio.de
+*** Date: May 2012
+*** Made for Kirby CMS [http://getkirby.com]
+
+************************************************************************************************************************/
+
+
+/* Reset
+-------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* HTML5 Hack for Oldtimers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+
+/* Structure
+-------------------------------------------------------------- */
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    height: 101%;
+}
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 0 50px 0;
+}
+div#site {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 750px;
+}
+header#branding {
+    margin: 30px 0;
+}
+footer#colophon {
+    padding: 10px 0;
+    font-size: 80%;
+    border-top: 1px solid #999;
+}
+
+/* Links
+-------------------------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #50626e;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    color: #9F513E;
+}
+a:focus {
+    background: #ddd;
+}
+
+/* Header
+-------------------------------------------------------------- */
+
+header#branding hgroup h1 {
+    font-size: 35px;
+}
+header#branding hgroup h2 {
+    font-size: 20px;
+    color: #999;
+}
+
+/* Navigation
+-------------------------------------------------------------- */
+
+nav.menu {
+    float: left;
+    width: 100%;
+}
+nav.menu ul {
+    float: left;
+    width: 100%;
+    margin: 0 0 30px 0;
+    background: #50626e;
+}
+nav.menu ul li {
+    float: left;
+    display: inline;
+}
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+nav.menu ul li a:hover {
+    background: #657C8B;
+}
+
+/* Articles
+-------------------------------------------------------------- */
+
+article p {
+    line-height: 25px;
+    margin: 10px 0;
+}
+article div a {
+    border-bottom: 1px solid #ccc;
+}
+article ol,
+article ul {
+    list-style-type: disc;
+    margin: 0px 0 20px 20px;
+    line-height: 25px;
+}
+section.blog article {
+    margin: 0 0 70px 0;
+}
+section.blog article header.post-meta {
+    color: #888;
+    font-size: 85%;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #bbb;
+}
+section.blog article footer.post-sub {
+    margin: 30px 0 0 0;
+}
+section.blog article footer.post-sub a {
+    background: #50626e;
+    padding: 5px 10px;
+    margin: 0 10px 0 0;
+    color: #fff;
+}
+section.blog article footer.post-sub a:hover {
+    background: #657C8B;
+}
+article h1 {
+    font-size: 28px;
+    line-height: 40px;
+}
+article h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+}
+article h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+}
+article blockquote {
+    margin: 20px;
+    padding: 0 10px;
+    float: left;
+    font-style: italic;
+    border-left: 5px solid #50626e;
+}
+section.page h1 {
+    border-bottom: 1px solid #999;
+}
+section.page {
+    padding: 0 0 30px 0;
+}
+.read_more {
+    float: right;
+    font-size: 85%;
+}
+h1.category_overview {
+    float: left;
+    width: 100%;
+    color: #555;
+    font-size: 25px;
+    padding: 5px;
+    background: #eee;
+    margin: 0 0 50px 0;
+}
+
+/* Postformats
+-------------------------------------------------------------- */
+header.format_link h1 a:after {
+    content: " →";
+}
+
+/* Text
+-------------------------------------------------------------- */
+
+strong {
+    font-style: bold;
+}
+em {
+    font-style: italic;
+}
+
+/* Pagination
+-------------------------------------------------------------- */
+nav.pagination {
+    margin: 30px 0;    
+}
+nav.pagination a {
+    background: #50626e;
+    padding: 5px 10px;
+    color: #fff;
+}
+nav.pagination a:hover {
+    background: #657C8B;
+}
+
+/* Media
+-------------------------------------------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+iframe {
+    max-width: 100%;
+}
+
+/* IE
+-------------------------------------------------------------- */
+html.ie {
+    /* Your awesome styles for the dev's nightmare. */
+}

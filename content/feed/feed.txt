@@ -1,0 +1,5 @@
+﻿Title: Kirby Blog Feed
+
+----
+
+Description: A nice blog feed for the Kirby Blog Theme.

@@ -1,0 +1,9 @@
+﻿Title: Blog
+
+----
+
+Description: This a nice simple blog template for Kirby. And it's responsive.
+
+----
+
+Copyright: © (date: Year) (link: http://slstudio.de text: Sascha Lack) • Based on (link: http://getkirby.com text: Kirby) • (link: http://kirbyblog.sashtown.de/feed text: RSS Feed)
