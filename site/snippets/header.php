@@ -37,6 +37,6 @@ Header Snippet for the Baseblog Kirby Theme
         <header id="branding">
             <hgroup>
                 <a href="<?php echo url() ?>"><h1><?php echo html($site->title()) ?></h1></a>
-                <h2>A nice & clean Basic Blog for <a href="http://getkirby.com">Kirby</a>. And boy, it's responsive!</h2>
+                <h2><?php echo html($site->description()) ?></h2>
             <hgroup> 
         </header>

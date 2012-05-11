@@ -6,7 +6,7 @@ Author: Sascha Lack
 
 ----
 
-Description: This a nice simple blog template for Kirby. And it's responsive.
+Description: A nice & clean Basic Blog for Kirby. And boy, it's responsive!
 
 ----
 
