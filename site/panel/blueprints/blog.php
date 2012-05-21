@@ -7,9 +7,9 @@ pages: true
 files: true
 
 fields:
-	title: 
-    	label: Site Title
-    	type: text
-	description:
-		label: Site Description
-		type: text
+   title: 
+      label: Site Title
+      type: text
+   description:
+      label: Site Description
+      type: text
