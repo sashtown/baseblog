@@ -6,7 +6,7 @@ Description: All about this Kirby Blog Theme.
 
 ----
 
-Text: This theme is made to give you a nice and clean start to create a blog with Kirby. It allows you to setup your posts and pages quickly, so you can customize and just start blogging. Here are some build-in features of this theme in the current version:
+Text: This theme is made to give you a nice and clean start to create a blog with Kirby. It allows you to setup your posts and pages quickly, so you can customize and just start blogging. Here are some built-in features of this theme in the current version:
 
 - categories
 - responsiveness
@@ -26,8 +26,10 @@ After downloading just remove the default **assets**, **content** and **site** f
 ##Docs
 If you want to learn more about Kirby, visit the (link: http://getkirby.com text: Kirby-Website) and check out the docs!
 
-##Licence
-This theme is **free to use** with your Kirby installation. Please remember, that Kirby itself is not for free. If you use this theme for a public release, don't forget to **(link: http://getkirby.com/buy text: buy a licence)** for Kirby!
+##License
+This theme is **free to use** with your Kirby installation and licensed under the (link: http://creativecommons.org/licenses/by-sa/3.0/ text: CC BY-SA License). If you wanna support me and the development of this theme, though, you can do this (link: https://flattr.com/profile/sashtown text: right here).
+
+Please remember, that Kirby itself is not for free. If you use this theme for a public release, don't forget to **(link: http://getkirby.com/buy text: buy a license)** for Kirby!
 
 ##Download
 You can download the latest version of the Basic Blog Theme on Github.
