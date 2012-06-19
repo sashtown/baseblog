@@ -1,6 +1,6 @@
 #Baseblog Kirby Theme
 
-This theme is made to give you a nice and clean start to create a blog with [Kirby](http://getkirby.com). It allows you to setup your posts and pages quickly, so you can customize and just start blogging. Here are some built-in features of this theme in the current version:
+This theme is made to give you a nice and clean start to create a blog with [Kirby](http://getkirby.com). It allows you to setup your posts and pages quickly, so you can customize and just start blogging. Here are some build-in features of this theme in the current version:
 
 - categories
 - responsiveness
@@ -20,11 +20,8 @@ After downloading the theme just remove the default **assets**, **content** and 
 ##Docs
 If you want to learn more about Kirby, visit the [Kirby Website](http://getkirby.com) and check out the docs!
 
-##License 
-
-This theme is **free to use** with your Kirby installation and licensed under the [CC BY-SA License](http://creativecommons.org/licenses/by-sa/3.0/). If you wanna support me and the development of this theme, though, you can do this [right here](https://flattr.com/profile/sashtown).
-
-Please remember, that Kirby itself is not for free. If you use this theme for a public release, don't forget to **[buy a licence](http://getkirby.com/buy)** for Kirby!
+##Licence
+This theme is **free to use** with your Kirby installation. Please remember, that Kirby itself is **not** for free. If you use this theme for a public release, don't forget to **[buy a licence](http://getkirby.com/buy)** for Kirby!
 
 ##Showcase
 http://kirbyblog.sashtown.de/
