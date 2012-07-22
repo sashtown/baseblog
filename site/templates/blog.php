@@ -29,7 +29,7 @@
             <?php if($article->template() == 'article.text'): /*** postformat: TEXT ***/ ?>
             <header class="post-meta">
                 <h1><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h1>
-                Postet on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time> in 
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time> in 
                 <a class="category" href="<?php echo url() ?>blog/category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a>
             </header>
             <p><?php echo excerpt($article->text(), 400) ?></p>

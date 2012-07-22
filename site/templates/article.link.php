@@ -7,7 +7,7 @@
         <article>
         	<header class="post-meta format_link">
                 <h1><a href="<?php echo $page->customlink() ?>"><?php echo html($page->linktitle()) ?></a></h1>
-                Postet on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time> in 
+                Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time> in 
                 <a class="category" href="<?php echo url() ?>blog/category:<?php echo $page->categories(); ?>"><?php echo $page->categories(); ?></a>
             </header>
             <div>
