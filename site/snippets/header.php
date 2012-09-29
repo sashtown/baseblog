@@ -6,21 +6,21 @@ Header Snippet for the Baseblog Kirby Theme
 <!DOCTYPE html>
 <!--[if lte IE 8]><html class="ie"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> 
-<html lang="de"> <!--<![endif]-->
+<html lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <title><?php echo html($page->title()) ?> | <?php echo html($site->title()) ?></title>
     
     <?php if($page->description() != ''): ?>
-<meta name="description" content="<?php echo html($page->description()) ?>" />
+    <meta name="description" content="<?php echo html($page->description()) ?>" />
     <?php else: ?>
-<meta name="description" content="<?php echo html($site->description()) ?>" />
+    <meta name="description" content="<?php echo html($site->description()) ?>" />
     <?php endif ?>
     
     <meta name="robots" content="index, follow" />
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.jpg') ?>" type="image/png" />
+    <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="alternate" type="application/rss+xml" href="<?php echo url('feed') ?>" title="Blog Feed" />
 
