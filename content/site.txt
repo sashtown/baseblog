@@ -10,4 +10,4 @@ Description: A nice & clean Basic Blog for Kirby. And boy, it's responsive!
 
 ----
 
-Copyright: © (date: Year) (link: http://slstudio.de text: Sascha Lack) • Based on (link: http://getkirby.com text: Kirby) • (link: http://kirbyblog.sashtown.de/feed text: RSS Feed) • (link: http://creativecommons.org/licenses/by-sa/3.0/ text: CC BY-SA)
+Copyright: © (date: Year) (link: http://sashtown.de text: Sascha Lack) • Based on (link: http://getkirby.com text: Kirby) • (link: http://kirbyblog.sashtown.de/feed text: RSS Feed) • (link: http://creativecommons.org/licenses/by-sa/3.0/ text: CC BY-SA)
