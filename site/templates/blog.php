@@ -38,7 +38,8 @@
             <?php elseif($article->template() == 'article.link'): /*** postformat: LINK ***/ ?>
             <header class="post-meta format_link">
                 <h1><a href="<?php echo $article->customlink() ?>"><?php echo html($article->linktitle()) ?></a></h1>
-            </header>
+				Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time> in
+				<a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a>            </header>
             <?php echo kirbytext($article->text()) ?>
             <a class="read_more" href="<?php echo $article->url() ?>">permalink →</a>
             <?php endif ?>
