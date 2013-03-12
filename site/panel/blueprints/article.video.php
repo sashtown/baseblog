@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# article.text blueprint
+# article.video blueprint
 
-title: LINK POST
+title: VIDEO POST
 pages: false
 files: true
 
@@ -13,15 +13,6 @@ fields:
     description:
         label: Site Description
         type: text
-    linktitle: 
-        label: Link Title
-        type: text
-        required: true
-    customlink: 
-        label: Custom Link
-        type: text
-        validate: url
-        required: true
     date:
         label: Date
         type: date
@@ -30,6 +21,11 @@ fields:
         label: Category
         type: text
         required: true
+    video: 
+        label: Video
+        type: text
+        required: true
+        help: Just use the Kirbytext tags for YouTube/Vimeo! [http://getkirby.com/blog/text-formatting-101]
     text:
         label: Post
         type: textarea

@@ -9,34 +9,36 @@ Header Snippet for the Baseblog Kirby Theme
 <html lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title><?php echo html($page->title()) ?> | <?php echo html($site->title()) ?></title>
-    
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <?php echo css('assets/styles/styles.css') ?>
+
     <?php if($page->description() != ''): ?>
     <meta name="description" content="<?php echo html($page->description()) ?>" />
     <?php else: ?>
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <?php endif ?>
-    
-    <meta name="robots" content="index, follow" />
-    
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+
+    <meta name="apple-mobile-web-app-title" content="<?php echo html($site->title()) ?>">
     <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="apple-touch-icon" href="<?php echo url('assets/images/apple-touch-icon-precomposed.png') ?>" />
     <link rel="alternate" type="application/rss+xml" href="<?php echo url('feed') ?>" title="Blog Feed" />
 
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    
-    <?php echo css('assets/styles/styles.css') ?>
-
+    <!--[if lt IE 9]><script src="<?php echo url('assets/js/html5shiv.js') ?>"></script><![endif]-->
 </head>
 
 <body>
 
-    <div id="site">
+    <div class="site">
 
-        <header id="branding">
+        <header id="top" class="branding" role="banner">
             <hgroup>
-                <a href="<?php echo url() ?>"><h1><?php echo html($site->title()) ?></h1></a>
+                <h1><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
                 <h2><?php echo html($site->description()) ?></h2>
             <hgroup> 
         </header>
+        

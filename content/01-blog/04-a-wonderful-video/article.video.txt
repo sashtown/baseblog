@@ -1,0 +1,21 @@
+﻿Title: A wonderful video
+
+----
+
+Description: This could be a wonderful video post.
+
+----
+
+Date: 2013-03-11
+
+----
+
+Categories: Media
+
+----
+
+Video: (vimeo: http://vimeo.com/29950141)
+
+----
+
+Text: What an awesome video.

@@ -3,7 +3,8 @@
 # blog blueprint
 
 title: Blog
-pages: true
+pages: 
+    sort: flip
 files: true
 
 fields:

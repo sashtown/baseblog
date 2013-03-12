@@ -1,5 +1,5 @@
-﻿Title: Kirby Blog Feed
+﻿Title: Baseblog Article Feed
 
 ----
 
-Description: A nice blog feed for the Kirby Blog Theme.
+Description: The blog feed for the Baseblog Theme.

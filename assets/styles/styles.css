@@ -2,13 +2,15 @@
 
 ****** Baseblog Kirby Theme ******
 
-*** URL: http://kirbyblog.sashtown.de
+*** Demo URL: http://baseblog.sashtown.de
 *** Author: Sascha Lack
-*** Author URI: http://slstudio.de
-*** Date: May 2012
+*** Author URI: http://sashtown.de
+*** First release: May 2012
+*** Current release 1.1: March 2013
 *** Made for Kirby CMS [http://getkirby.com]
 
 ************************************************************************************************************************/
+
 
 
 /* Reset
@@ -31,11 +33,12 @@ ol, ul {
     list-style: none;
 }
 
+
+
 /* Structure
 -------------------------------------------------------------- */
 
 html {
-    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     height: 101%;
 }
@@ -44,161 +47,200 @@ body {
     font-family: 'Open Sans', sans-serif;
     padding: 0 0 50px 0;
 }
-div#site {
+.site {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 750px;
 }
-header#branding {
-    margin: 30px 0;
+.branding {
+    padding: 30px 0;
 }
-footer#colophon {
+.colophon {
     padding: 10px 0;
     font-size: 80%;
     border-top: 1px solid #999;
 }
+
+
 
 /* Links
 -------------------------------------------------------------- */
 
 a:link,
 a:visited {
-    color: #50626e;
+    color: #dd4a38;
     text-decoration: none;
 }
 a:hover,
 a:active {
-    color: #9F513E;
+    color: #333;
 }
 a:focus {
     background: #ddd;
 }
 
+
+
 /* Header
 -------------------------------------------------------------- */
 
-header#branding hgroup h1 {
-    font-size: 35px;
+.branding h1 {
+    font-size: 40px;
 }
-header#branding hgroup h2 {
+.branding h2 {
     font-size: 20px;
     color: #999;
 }
 
+
+
 /* Navigation
 -------------------------------------------------------------- */
 
-nav.menu {
-    float: left;
-    width: 100%;
+.menu {
+    margin: 0 0 60px 0;
+    background: #444;
 }
-nav.menu ul {
+.menu li {
     float: left;
-    width: 100%;
-    margin: 0 0 30px 0;
-    background: #50626e;
-}
-nav.menu ul li {
-    float: left;
-    display: inline;
-}
-nav.menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 30px;
     display: inline-block;
-    padding: 5px 10px;
 }
-nav.menu ul li a:hover {
-    background: #657C8B;
+.menu a {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
+.menu a:hover {
+    background: #dd4a38;
+}
+
+
+
+/* Search
+-------------------------------------------------------------- */
+
+.search {
+    float: right;
+    width: 35%;
+}
+.search input {
+    padding: 10px 0 10px 10px;
+    height: 42px;
+    width: 100%;
+    outline: 0;
+    color: #aaa;
+    font-size: 16px;
+    background: #444;
+    border-radius: 0;
+    border-left: 1px solid #666;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.search input:hover {
+    opacity: 0.7;
+}
+.search input:focus {
+    cursor: text;
+    background: #dd4a38;
+    color: #fff;
+}
+@media only screen and (max-width : 500px) {  
+    .search {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #666;
+    }
+}
+
+
 
 /* Articles
 -------------------------------------------------------------- */
 
-article p {
-    line-height: 25px;
-    margin: 10px 0;
+.blog .post {
+    margin: 0 0 80px 0;
 }
-article div a {
-    border-bottom: 1px solid #ccc;
-}
-article ol,
-article ul {
-    list-style-type: disc;
-    margin: 0px 0 20px 20px;
-    line-height: 25px;
-}
-section.blog article {
-    margin: 0 0 70px 0;
-}
-section.blog article header.post-meta {
+.post-meta {
     color: #888;
     font-size: 85%;
-    margin: 0 0 10px 0;
+    margin: 5px 0 20px 0;
     padding: 0 0 5px 0;
     border-bottom: 1px solid #bbb;
 }
-section.blog article footer.post-sub {
+.content a {
+    border-bottom: 1px solid #ccc;
+}
+.blog .post-sub {
     margin: 30px 0 0 0;
 }
-section.blog article footer.post-sub a {
-    background: #50626e;
-    padding: 5px 10px;
+.blog .post-sub a {
+    display: inline-block;
     margin: 0 10px 0 0;
+    background: #444;
+    padding: 10px;
     color: #fff;
 }
-section.blog article footer.post-sub a:hover {
-    background: #657C8B;
-}
-article h1 {
-    font-size: 28px;
-    line-height: 40px;
-}
-article h2 {
-    font-size: 24px;
-    line-height: 24px;
-    margin: 20px 0 0 0;
-}
-article h3 {
-    font-size: 20px;
-    line-height: 20px;
-    margin: 20px 0 0 0;
-}
-article blockquote {
-    margin: 20px;
-    padding: 0 10px;
-    float: left;
-    font-style: italic;
-    border-left: 5px solid #50626e;
-}
-section.page h1 {
-    border-bottom: 1px solid #999;
-}
-section.page {
-    padding: 0 0 30px 0;
+.blog .post-sub a:hover {
+    background: #dd4a38;
 }
 .read_more {
     float: right;
+    margin: 5px 0 0 0;
     font-size: 85%;
+    text-transform: uppercase;
 }
-h1.category_overview {
+
+
+
+/* Pages
+-------------------------------------------------------------- */
+
+.page {
+    padding: 0 0 30px 0;
+}
+.page h1 {
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #999;
+}
+
+
+
+/* Results of search and categories <h1>
+-------------------------------------------------------------- */
+.results {
     float: left;
+    margin: 0 0 50px 0;
+    padding: 5px 10px;
     width: 100%;
     color: #555;
     font-size: 25px;
-    padding: 5px;
     background: #eee;
-    margin: 0 0 50px 0;
+}
+.no_results {
+    margin: 50px 0;
 }
 
-/* Postformats
+
+
+/* Post formats
 -------------------------------------------------------------- */
-header.format_link h1 a:after {
+
+.format_link h1 {
+    font-size: 25px;
+}
+.format_link h1 a:after {
     content: " →";
 }
 
-/* Text
+
+
+/* Typo
 -------------------------------------------------------------- */
 
 strong {
@@ -207,20 +249,60 @@ strong {
 em {
     font-style: italic;
 }
+article p {
+    line-height: 25px;
+    margin: 10px 0;
+}
+article h1 {
+    color: #444;
+    font-size: 30px;
+    line-height: 35px;
+}
+article h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 30px 0 0 0;
+}
+article h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+}
+article ol,
+article ul {
+    list-style-type: disc;
+    margin: 0px 0 20px 20px;
+    line-height: 25px;
+}
+article blockquote {
+    margin: 10px 20px 20px 20px;
+    padding: 0 15px;
+    float: left;
+    font-style: italic;
+    border-left: 10px solid #e5e5e5;
+}
+
+
 
 /* Pagination
 -------------------------------------------------------------- */
-nav.pagination {
-    margin: 30px 0;    
+.pagination {
+    margin: 50px 0 30px 0;    
 }
-nav.pagination a {
-    background: #50626e;
-    padding: 5px 10px;
+.pagination a {
+    display: inline-block;
+    padding: 10px;
     color: #fff;
+    background: #444;
 }
-nav.pagination a:hover {
-    background: #657C8B;
+.pagination a:hover {
+    background: #dd4a38;
 }
+.pagination .next {
+    float: right;
+}
+
+
 
 /* Media
 -------------------------------------------------------------- */
@@ -233,6 +315,57 @@ img {
 iframe {
     max-width: 100%;
 }
+
+
+
+/* YouTube & Vimeo
+-------------------------------------------------------------- */
+
+.video-container {
+  margin: 10px 0;
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 15px;
+  height: auto;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Clearfix 
+---------------------------------------------------------------*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+
+
+
+/* Visually hidden 
+------------------------------------------------------------------------*/
+.vh {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
 
 /* IE
 -------------------------------------------------------------- */

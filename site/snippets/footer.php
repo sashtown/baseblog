@@ -3,11 +3,11 @@
 Footer Snippet for the Baseblog Kirby Theme
 *******************************************/
 ?>
-		<footer id="colophon">
-    	<?php echo kirbytext($site->copyright()) ?>
-  		</footer>
+        <footer class="colophon" role="contentinfo">
+            <?php echo kirbytext($site->copyright()) ?>
+        </footer>
 
-  	</div><!-- #site -->
+    </div><!-- .site -->
 
 </body>
 

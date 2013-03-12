@@ -37,10 +37,41 @@ or you need to set it on your own, do it like this:
 c::set('url', 'http://yourdomain.com');
 
 Make sure to write the url without a trailing slash.
+
+To work with relative URLs, you can set the URL like this:
+
+c::set('url', '/');
  
 */
 
 c::set('url', false);
+
+
+/* 
+
+---------------------------------------
+Subfolder Setup
+---------------------------------------
+
+Kirby will automatically try to detect the subfolder
+
+i.e. http://yourdomain.com/subfolder
+
+This might fail depending on your server setup. 
+In such a case, please set the correct subfolder here. 
+
+You must also set the right url then:
+
+c::set('url', 'http://yoururl.com/subfolder');
+
+if you are using the .htaccess file, make sure to 
+set the right RewriteBase there as well:
+
+RewriteBase /subfolder
+ 
+*/
+
+c::set('subfolder', false);
 
 
 /* 
@@ -59,29 +90,6 @@ http://yourdomain.com/index.php/about
 */
 
 c::set('rewrite', true);
-
-
-/* 
-
----------------------------------------
-Subfolder Setup
----------------------------------------
-
-if you run the site in a subfolder of your domain
-define the name of that subfolder here. 
-
-You must also set the right url in that case:
-
-c::set('url', 'http://yoururl.com/subfolder');
-
-if you are using the .htaccess file, make sure to 
-set the right RewriteBase there as well:
-
-RewriteBase /subfolder
- 
-*/
-
-c::set('subfolder', false);
 
 
 /* 
@@ -127,8 +135,8 @@ embedded flash videos from youtube or vimeo
 
 */
 
-c::set('kirbytext.video.width', 750); 
-c::set('kirbytext.video.height', 422); 
+c::set('kirbytext.video.width', 480); 
+c::set('kirbytext.video.height', 358); 
 
 
 /* 
@@ -137,12 +145,56 @@ c::set('kirbytext.video.height', 422);
 Markdown Setup 
 ---------------------------------------
 
-to disable automatic line breaks in markdown
-set this to false
+You can globally switch Markdown parsing 
+on or off here. 
+
+To disable automatic line breaks in markdown
+set markdown.breaks to false. 
+
+You can also switch between regular markdown
+or markdown extra: http://michelf.com/projects/php-markdown/extra/
 
 */
 
-c::set('markdown.break', true);
+c::set('markdown', true);
+c::set('markdown.breaks', true);
+c::set('markdown.extra', false);
+
+
+/* 
+
+---------------------------------------
+Smartypants Setup 
+---------------------------------------
+
+Smartypants is a typography plugin, which
+helps to improve things like quotes and ellipsises
+and all those nifty little typography details. 
+
+You can read more about it here: 
+http://michelf.com/projects/php-smartypants/typographer/
+
+Smartypants is switched off by default. 
+As soon as it is switched on it will affect all 
+texts which are parsed by kirbytext()
+
+*/
+
+// smartypants
+c::set('smartypants', false);
+c::set('smartypants.attr', 1);
+c::set('smartypants.doublequote.open', '&#8220;');
+c::set('smartypants.doublequote.close', '&#8221;');
+c::set('smartypants.space.emdash', ' ');
+c::set('smartypants.space.endash', ' ');
+c::set('smartypants.space.colon', '&#160;');
+c::set('smartypants.space.semicolon', '&#160;');
+c::set('smartypants.space.marks', '&#160;');
+c::set('smartypants.space.frenchquote', '&#160;');
+c::set('smartypants.space.thousand', '&#160;');
+c::set('smartypants.space.unit', '&#160;');
+c::set('smartypants.skip', 'pre|code|kbd|script|math');
+
 
 
 /*
@@ -175,8 +227,10 @@ Cache
 ---------------------------------------
 
 Enable or disable the cache. 
-It is enabled by default, but you 
-need to make sure that the site/cache
+It is disabled by default. 
+
+If you enable it, you need to make 
+sure that the site/cache
 directory is writable. 
 
 You can also decide to disable/enable
@@ -186,8 +240,6 @@ the final html, make sure to clean
 the cache, once you've modified your
 templates. It's better to keep this
 off until your site is ready for production. 
-
-Caching is switched off by default
 
 With c::set('cache.autoupdate') you can set if 
 Kirby will automatically check for updates in your 
@@ -210,8 +262,8 @@ c::set('cache.ignore', array('search', 'some/other/uri/to/ignore'));
 
 c::set('cache', false);
 c::set('cache.autoupdate', true);
-c::set('cache.data', false);
-c::set('cache.html', false);
+c::set('cache.data', true);
+c::set('cache.html', true);
 c::set('cache.ignore', array());
 
 
@@ -262,7 +314,7 @@ php errors there.
 
 */
 
-c::set('debug', false);
+c::set('debug', true);
 
 
 /* 
@@ -317,4 +369,75 @@ custom config by specific rules for that host.
 
 */
 
-?>
+
+/* 
+
+---------------------------------------
+Multi-Language support setup
+---------------------------------------
+
+If you want to run a site with multiple languages, 
+enable support for it here. As soon as you set
+
+c::set('lang.support', true); 
+
+Kirby will automatically create language-dependent 
+URLs like:
+
+http://yourdomain.com/en/blog
+
+or 
+
+http://yourdomain.com/de/blog
+
+Make sure to set the default language code and 
+also the available language codes. 
+
+If you keep…
+
+c::set('lang.detect', true);
+
+Kirby will try to detect the default language 
+from the user agent string instead of using the
+default language. 
+
+*/
+
+c::set('lang.support', false);
+c::set('lang.default', 'en');
+c::set('lang.available', array('en', 'de'));
+c::set('lang.detect', true);
+
+
+/* 
+
+---------------------------------------
+Content File Extension
+---------------------------------------
+
+Change the default file extension for your
+content files here if you'd rather use something
+else than txt. For example md or mdown. 
+
+*/
+
+c::set('content.file.extension', 'txt');
+
+
+/*
+
+---------------------------------------
+Ignore Content Files
+---------------------------------------
+
+Sometimes it's necessary to ignore particular
+content files/folders in all content folders. 
+Just add them to the array here. By default
+the following files are being ignored:
+
+array('.', '..', '.DS_Store', '.svn', '.git', '.htaccess');
+
+…so you don't have to add them. 
+
+*/
+c::set('content.file.ignore', array());

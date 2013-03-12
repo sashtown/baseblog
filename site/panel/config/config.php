@@ -8,7 +8,7 @@ c::set('panel.language', 'en');
 
 // set the main color for the panel design
 // can be any valid css color definition
-c::set('panel.color', '#50626e');
+c::set('panel.color', '#dd4a38');
 
 // allowed mime types for file uploads
 c::set('upload.allowed', array(

@@ -1,24 +1,18 @@
 ﻿Title: A second awesome article
 
 ----
-
 Description: This could be a second awesome article.
 
 ----
-
 Date: 2012-04-27
 
 ----
-
 Categories: News
 
 ----
+Text: 
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-
-<iframe src="http://player.vimeo.com/video/35396305?color=bc3d54" width="750" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 (vimeo: http://vimeo.com/35396305)
 

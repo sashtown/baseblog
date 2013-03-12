@@ -2,6 +2,10 @@
 
 ----
 
+Description: This could be a pretty nice test link.
+
+----
+
 Linktitle: A pretty nice testlink
 
 ----
@@ -10,7 +14,7 @@ Customlink: http://getkirby.com
 
 ----
 
-Date: 2012-05-10
+Date: 2013-03-10
 
 ----
 
@@ -18,10 +22,6 @@ Categories: Links
 
 ----
 
-Text: > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Fascetur ridiculus mus. 
+Text: > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Fascetur ridiculus mus. 
 
-Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-
-----
-
-Description: This could be a pretty nice test link.
+Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.
