@@ -28,7 +28,7 @@
         <article class="post format_text">
             <header class="post-meta">
                 <h1><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h1>
-                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($article->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($article->categories()) as $category): ?>
@@ -45,7 +45,7 @@
         <article class="post format_link">
             <header class="post-meta">
                 <h1><a href="<?php echo $article->customlink() ?>"><?php echo html($article->linktitle()) ?></a></h1>
-                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($article->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($article->categories()) as $category): ?>
@@ -61,7 +61,7 @@
         <?php elseif($article->template() == 'article.video'): /*** post format: VIDEO ***/ ?>
         <article class="post format_video">
             <header class="post-meta">
-                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($article->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($article->categories()) as $category): ?>
