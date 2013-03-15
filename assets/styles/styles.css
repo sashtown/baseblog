@@ -60,6 +60,9 @@ body {
     font-size: 80%;
     border-top: 1px solid #999;
 }
+.colophon p {
+    display: inline;
+}
 
 
 
@@ -173,6 +176,19 @@ a:focus {
     padding: 0 0 5px 0;
     border-bottom: 1px solid #bbb;
 }
+.category {
+    display: inline;
+}
+.category li {
+    display: inline;
+    margin: 0 2px 0 0;
+}
+.category li:after {
+    content: ',';
+}
+.category li:last-child:after {
+    content: none;
+}
 .content a {
     border-bottom: 1px solid #ccc;
 }
@@ -268,8 +284,8 @@ article h3 {
     line-height: 20px;
     margin: 20px 0 0 0;
 }
-article ol,
-article ul {
+article .content ol,
+article .content ul {
     list-style-type: disc;
     margin: 0px 0 20px 20px;
     line-height: 25px;

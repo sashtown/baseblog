@@ -7,7 +7,7 @@ Description: This could be a second awesome article.
 Date: 2012-04-27
 
 ----
-Categories: News
+Categories: News, Stuff, Media
 
 ----
 Text: 

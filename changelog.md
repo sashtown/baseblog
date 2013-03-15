@@ -1,5 +1,12 @@
 #Baseblog Changelog
 
+##1.1.1
+Some fixes and pumped up categories.
+
+- Fixed the broken to top link in the `footer.php`.
+- Improved the blog categories. Multiple (and no) categories are possible now.
+- Added a .gitignore. Finally.
+
 
 ##1.1
 A minor release to bring up some improvements and new features.

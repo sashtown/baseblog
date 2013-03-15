@@ -33,7 +33,13 @@
             <header class="post-meta">
                 <h1><a href="<?php echo $result->url() ?>"><?php echo html($result->title()) ?></a></h1>
                 Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
-                <?php if ($result->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $result->categories(); ?>"><?php echo $result->categories(); ?></a> <?php } ?>
+                <?php if ($result->categories() != ''): ?> in
+                <ul class="category">
+                    <?php foreach(str::split($result->categories()) as $category): ?>
+                    <li><a href="<?php echo url('category:' . urlencode($category)) ?>"><?php echo $category; ?></a></li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endif ?>
             </header>
             <p><?php echo excerpt($result->text(), 400) ?></p>
             <a class="read_more" href="<?php echo $result->url() ?>">read more →</a>
@@ -44,7 +50,13 @@
             <header class="post-meta">
                 <h1><a href="<?php echo $result->customlink() ?>"><?php echo html($result->linktitle()) ?></a></h1>
                 Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
-                <?php if ($result->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $result->categories(); ?>"><?php echo $result->categories(); ?></a> <?php } ?>
+                <?php if ($result->categories() != ''): ?> in
+                <ul class="category">
+                    <?php foreach(str::split($result->categories()) as $category): ?>
+                    <li><a href="<?php echo url('category:' . urlencode($category)) ?>"><?php echo $category; ?></a></li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endif ?>
             </header>
             <?php echo kirbytext($result->text()) ?>
             <a class="read_more" href="<?php echo $result->url() ?>">permalink</a>
@@ -54,7 +66,13 @@
         <article class="post format_video">
             <header class="post-meta">
                 Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
-                <?php if ($result->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $result->categories(); ?>"><?php echo $result->categories(); ?></a> <?php } ?>
+                <?php if ($result->categories() != ''): ?> in
+                <ul class="category">
+                    <?php foreach(str::split($result->categories()) as $category): ?>
+                    <li><a href="<?php echo url('category:' . urlencode($category)) ?>"><?php echo $category; ?></a></li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endif ?>
             </header>
             <?php echo kirbytext($result->video()) ?>
             <?php echo kirbytext($result->text()) ?>

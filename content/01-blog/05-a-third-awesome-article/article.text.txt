@@ -7,7 +7,7 @@ Description: This could be a third awesome article.
 Date: 2013-03-12
 
 ----
-Categories: Tools
+Categories: Tools, Stuff
 
 ----
 Text: 
