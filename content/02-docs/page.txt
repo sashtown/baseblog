@@ -8,9 +8,9 @@ Text:
 
 This theme is made to give you a nice and clean start to create a blog with Kirby. It allows you to setup your posts and pages quickly, so you can customize and just start blogging. Here are some built-in features of this theme in the [current version](https://github.com/sashtown/Baseblog-Kirby-Theme):
 
-- categories
-- responsiveness
 - custom post types (texts, links and videos)
+- (multiple) categories
+- responsiveness
 - search
 - error page
 - RSS feed for your articles
