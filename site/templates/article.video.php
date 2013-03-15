@@ -6,8 +6,8 @@
 
         <article class="post format_video">
             <header class="post-meta">
-                Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time> in 
-                <a class="category" href="<?php echo url() ?>category:<?php echo $page->categories(); ?>"><?php echo $page->categories(); ?></a>
+                Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time>
+                <?php if ($page->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $page->categories(); ?>"><?php echo $page->categories(); ?></a> <?php } ?>
             </header>
             <div class="content">
                 <?php echo kirbytext($page->video()) ?>
