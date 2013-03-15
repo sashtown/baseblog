@@ -441,3 +441,17 @@ array('.', '..', '.DS_Store', '.svn', '.git', '.htaccess');
 
 */
 c::set('content.file.ignore', array());
+
+/*
+Article date format.
+
+This is the date format used to add the date
+posted to blog posts.
+
+Different countries have different ideas about
+how day, month, and year should be ordered in
+a date. Set this to the preferred arrangement
+for your site.
+*/
+c::set('blog.article.dateformat', 'd.m.Y');
+

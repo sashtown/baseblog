@@ -32,7 +32,7 @@
         <article class="post format_text">
             <header class="post-meta">
                 <h1><a href="<?php echo $result->url() ?>"><?php echo html($result->title()) ?></a></h1>
-                Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($result->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($result->categories()) as $category): ?>
@@ -49,7 +49,7 @@
         <article class="post format_link">
             <header class="post-meta">
                 <h1><a href="<?php echo $result->customlink() ?>"><?php echo html($result->linktitle()) ?></a></h1>
-                Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($result->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($result->categories()) as $category): ?>
@@ -65,7 +65,7 @@
         <?php elseif($result->template() == 'article.video'): /*** post format: VIDEO ***/ ?>
         <article class="post format_video">
             <header class="post-meta">
-                Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($result->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($result->categories()) as $category): ?>

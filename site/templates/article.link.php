@@ -7,7 +7,7 @@
         <article class="post format_link">
         	<header class="post-meta">
                 <h1><a href="<?php echo $page->customlink() ?>"><?php echo html($page->linktitle()) ?></a></h1>
-                Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time>
+                Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date(c::get('blog.article.dateformat')); ?></time>
                 <?php if ($page->categories() != ''): ?> in
                 <ul class="category">
                     <?php foreach(str::split($page->categories()) as $category): ?>
