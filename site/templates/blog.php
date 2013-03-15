@@ -28,8 +28,8 @@
         <article class="post format_text">
             <header class="post-meta">
                 <h1><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h1>
-                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time> in
-                <a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a>
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
+                <?php if ($article->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a> <?php } ?>
             </header>
             <p><?php echo excerpt($article->text(), 400) ?></p>
             <a class="read_more" href="<?php echo $article->url() ?>">read more →</a>
@@ -39,8 +39,8 @@
         <article class="post format_link">
             <header class="post-meta">
                 <h1><a href="<?php echo $article->customlink() ?>"><?php echo html($article->linktitle()) ?></a></h1>
-                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time> in
-                <a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a>
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
+                <?php if ($article->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a> <?php } ?>
             </header>
             <?php echo kirbytext($article->text()) ?>
             <a class="read_more" href="<?php echo $article->url() ?>">permalink</a>
@@ -49,8 +49,8 @@
         <?php elseif($article->template() == 'article.video'): /*** post format: VIDEO ***/ ?>
         <article class="post format_video">
             <header class="post-meta">
-                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time> in
-                <a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a>
+                Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
+                <?php if ($article->categories()) { ?> in <a class="category" href="<?php echo url() ?>category:<?php echo $article->categories(); ?>"><?php echo $article->categories(); ?></a> <?php } ?>
             </header>
             <?php echo kirbytext($article->video()) ?>
             <?php echo kirbytext($article->text()) ?>
