@@ -27,7 +27,10 @@ This theme is **free to use** with your Kirby installation and licensed under th
 Please remember, that Kirby itself is not for free. If you use this theme for a public release, don't forget to **[buy a license](http://getkirby.com/buy)** for Kirby!
 
 ##Download
-You can download the latest version of the Basic Blog Theme on [Github](https://github.com/sashtown/Baseblog-Kirby-Theme).
+You can download the latest version of the theme on [Github](https://github.com/sashtown/Baseblog-Kirby-Theme).
+
+##Showcase
+<http://baseblog.sashtown.de>
 
 ##Contact
 If you have any questions about the theme, contact me by [email](mailto:mail@sashtown.de) or on [Twitter](http://twitter.com/#!/sashtown)
