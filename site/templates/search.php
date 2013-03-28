@@ -15,7 +15,7 @@
 
     <?php snippet('menu'); ?>
 
-    <section class="blog" role="main">
+    <main role="main">
 
     <?php if($results): ?>
     <h1 class="results"><?php echo $results->pagination->countItems() ?>
@@ -29,7 +29,7 @@
         <?php foreach($results as $result): ?>
 
         <?php if($result->template() == 'article.text'): /*** post format: TEXT ***/ ?>
-        <article class="post format_text">
+        <article class="blog format_text">
             <header class="post-meta">
                 <h1><a href="<?php echo $result->url() ?>"><?php echo html($result->title()) ?></a></h1>
                 Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
@@ -46,7 +46,7 @@
         </article>
 
         <?php elseif($result->template() == 'article.link'): /*** post format: LINK ***/ ?>
-        <article class="post format_link">
+        <article class="blog format_link">
             <header class="post-meta">
                 <h1><a href="<?php echo $result->customlink() ?>"><?php echo html($result->linktitle()) ?></a></h1>
                 Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
@@ -63,7 +63,7 @@
         </article>
 
         <?php elseif($result->template() == 'article.video'): /*** post format: VIDEO ***/ ?>
-        <article class="post format_video">
+        <article class="blog format_video">
             <header class="post-meta">
                 Posted on <time datetime="<?php echo $result->date('c') ?>"><?php echo $result->date('d.m.Y'); ?></time>
                 <?php if ($result->categories() != ''): ?> in
@@ -98,6 +98,6 @@
         <h1 class="no_results">Sorry... No Results.</h1>
         <?php endif ?>
 
-    </section><!-- .blog -->
+    </main>
 
 <?php snippet('footer') ?>

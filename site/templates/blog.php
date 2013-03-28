@@ -2,7 +2,7 @@
 
     <?php snippet('menu'); ?>
 
-	<section class="blog" role="main">
+	<main role="main">
         <?php if(param('category')) {   /*** article overview ***/
 
             $articles = $pages->find('blog')
@@ -25,7 +25,7 @@
         <?php foreach($articles as $article): ?>
 
         <?php if($article->template() == 'article.text'): /*** post format: TEXT ***/ ?>
-        <article class="post format_text">
+        <article class="blog format_text">
             <header class="post-meta">
                 <h1><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h1>
                 Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
@@ -42,7 +42,7 @@
         </article>
 
         <?php elseif($article->template() == 'article.link'): /*** post format: LINK ***/ ?>
-        <article class="post format_link">
+        <article class="blog format_link">
             <header class="post-meta">
                 <h1><a href="<?php echo $article->customlink() ?>"><?php echo html($article->linktitle()) ?></a></h1>
                 Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
@@ -59,7 +59,7 @@
         </article>
 
         <?php elseif($article->template() == 'article.video'): /*** post format: VIDEO ***/ ?>
-        <article class="post format_video">
+        <article class="blog format_video">
             <header class="post-meta">
                 Posted on <time datetime="<?php echo $article->date('c') ?>"><?php echo $article->date('d.m.Y'); ?></time>
                 <?php if ($article->categories() != ''): ?> in
@@ -90,6 +90,6 @@
         </nav>
         <?php endif ?>
 
-    </section><!-- .blog -->
+    </main>
 
 <?php snippet('footer') ?>

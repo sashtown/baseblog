@@ -2,9 +2,9 @@
 
     <?php snippet('menu'); ?>
            
-    <section class="blog" role="main">
+    <main role="main">
 
-        <article class="post format_video">
+        <article class="blog format_video">
             <header class="post-meta">
                 Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time>
                 <?php if ($page->categories() != ''): ?> in
@@ -27,6 +27,6 @@
             </footer>
         </article>
     
-    </section>
+    </main>
         
 <?php snippet('footer') ?>

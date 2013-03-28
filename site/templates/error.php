@@ -2,13 +2,13 @@
 
     <?php snippet('menu'); ?>
 
-    <section class="page" role="main">
+    <main role="main">
 
-        <article>
+        <article class="page">
             <h1><?php echo html($page->title()) ?></h1>
             <div class="content"><?php echo kirbytext($page->text()) ?></div>
         </article>
 
-	</section>
+	</main>
 
 <?php snippet('footer') ?>

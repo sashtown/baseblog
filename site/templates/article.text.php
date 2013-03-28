@@ -2,9 +2,9 @@
 
     <?php snippet('menu'); ?>
            
-    <section class="blog" role="main">
+    <main role="main">
 
-        <article class="post format_text">
+        <article class="blog format_text">
         	<header class="post-meta">
                 <h1><?php echo html($page->title()) ?></h1>
                 Posted on <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d.m.Y'); ?></time>
@@ -27,6 +27,6 @@
             </footer>
         </article>
     
-    </section>
+    </main>
         
 <?php snippet('footer') ?>
