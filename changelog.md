@@ -1,7 +1,7 @@
 #Baseblog Changelog
 
 ##1.1.2
-Some fixes and the brand new <main>-element.
+Some fixes and the brand new `<main>`-element.
 
 - Added the <main>-element for better semantics.
 - Cleaned up some CSS classes.
