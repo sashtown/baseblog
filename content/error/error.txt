@@ -6,4 +6,4 @@ Description: This could be a pretty helpful error page.
 
 ----
 
-Text: Ooops... We've got a legend 404. The page you've been looking for has not been found.
+Text: Ooops... We've got a legendary 404. The page you've been looking for has not been found.

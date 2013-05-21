@@ -25,7 +25,7 @@
     <?php endif ?>
 
         <?php if($results): ?>
-        
+
         <?php foreach($results as $result): ?>
 
         <?php if($result->template() == 'article.text'): /*** post format: TEXT ***/ ?>
@@ -78,6 +78,12 @@
             <?php echo kirbytext($result->text()) ?>
             <a class="read_more" href="<?php echo $result->url() ?>">permalink</a>
         </article>
+
+        <?php elseif($result->template() == 'page'): /*** pages ***/ ?>
+        <article class="page">
+            <h1><a href="<?php echo $result->url() ?>"><?php echo html($result->title()) ?></a></h1>
+            <p><?php echo excerpt($result->text(), 400) ?></p>
+        </article>
         <?php endif ?>
 
         <?php endforeach ?>
@@ -92,7 +98,7 @@
             <a class="next" href="<?= $results->pagination()->nextPageURL() ?>">older posts &rsaquo;&rsaquo;</a>
             <?php endif ?>
         </nav>
-        <?php endif ?>        
+        <?php endif ?>
 
         <?php else: ?>
         <h1 class="no_results">Sorry... No Results.</h1>
