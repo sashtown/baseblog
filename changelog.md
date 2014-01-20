@@ -1,5 +1,13 @@
 #Baseblog Changelog
 
+##1.1.4
+Just a few fixes.
+
+- Dropped the `width: 100%;` line on `<img>` elements (stupid me).
+- Added a link to my latest blog post about Baseblog in the `readme.md`.
+- Cleaned up some markup and styles.
+
+
 ##1.1.3
 Some fixes and a bunch of minor improvements.
 
@@ -16,7 +24,7 @@ Some fixes and a bunch of minor improvements.
 ##1.1.2
 Some fixes and the brand new `<main>`-element.
 
-- Added the <main>-element for better semantics.
+- Added the `<main>`-element for better semantics.
 - Cleaned up some CSS classes.
 - Fixed some minor stuff.
 
