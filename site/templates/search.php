@@ -21,7 +21,7 @@
     <h1 class="results"><?php echo $results->pagination->countItems() ?>
         <?php if($results->pagination->countItems()=='1'): ?> result
         <?php else: ?> results
-        <?php endif ?> for <em><?php echo $search->query(); ?></em></h1>
+        <?php endif ?> for <mark><?php echo $search->query(); ?></mark></h1>
     <?php endif ?>
 
         <?php if($results): ?>
