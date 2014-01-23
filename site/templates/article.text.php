@@ -24,6 +24,8 @@
     			<a href="<?php echo url() ?>">← Back</a>
                 <!-- Static Twitter Button -->
                 <a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($site->title()) ?>%20<?php echo rawurlencode ($page->url()); ?>%20<?php echo ('via @your_twitter_account')?>" target="blank" title="Tweet this">Tweet</a>
+            <br>
+                <?php snippet('disqus', array('disqus_shortname' => 'myawesomeblog')) ?>
             </footer>
         </article>
     
