@@ -1,14 +1,14 @@
 #Baseblog Changelog
 
-##1.1.4
+##1.1.4 (Jan 20, 2014)
 Just a few fixes.
 
 - Dropped the `width: 100%;` line on `<img>` elements (stupid me).
-- Added a link to my latest blog post about Baseblog in the `readme.md`.
+- Added a link to my latest blog post about Baseblog to the `readme.md`.
 - Cleaned up some markup and styles.
 
 
-##1.1.3
+##1.1.3 (May 21, 2013)
 Some fixes and a bunch of minor improvements.
 
 - Fixed the blockquotes CSS.
@@ -21,7 +21,7 @@ Some fixes and a bunch of minor improvements.
 - Dropped some trailing white space.
 
 
-##1.1.2
+##1.1.2 (Mar 28, 2013)
 Some fixes and the brand new `<main>`-element.
 
 - Added the `<main>`-element for better semantics.
@@ -29,7 +29,7 @@ Some fixes and the brand new `<main>`-element.
 - Fixed some minor stuff.
 
 
-##1.1.1
+##1.1.1 (Mar 15, 2013)
 Some fixes and pumped up categories.
 
 - Fixed the broken to top link in the `footer.php`.
@@ -37,7 +37,7 @@ Some fixes and pumped up categories.
 - Added a .gitignore. Finally.
 
 
-##1.1
+##1.1 (Mar 12, 2013)
 A minor release to bring up some improvements and new features.
 
 - Added a post format for videos.
@@ -50,9 +50,9 @@ A minor release to bring up some improvements and new features.
 - Refreshed the design. Just a lil' bit.
 
 
-##1.0.1
+##1.0.1 (Mar 10, 2013)
 A little fix, crafted by [@mrimann](https://twitter.com/mrimann) which eliminates PHP short tags for better compatibility.
 
 
-##1.0
+##1.0 (May 04, 2012)
 First Release.
