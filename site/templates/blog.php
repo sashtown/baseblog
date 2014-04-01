@@ -5,14 +5,17 @@
 	<main role="main">
         <?php if(param('category')) {   /*** article overview ***/
 
+            $category = param('category');
+            $category = str_replace('+', ' ', $category);
+            $category = str_replace('%20', ' ', $category);
             $articles = $pages->find('blog')
                             ->children()
                             ->visible()
-                            ->filterBy('categories', param('category'), ',')
+                            ->filterBy('categories', $category, ',')
                             ->flip()
                             ->paginate(4);
 
-                            echo ('<h1 class="results">Category Archives: <em>'), (param('category')), ('</em></h1>');
+                            echo ('<h1 class="results">Category Archives: <em>'), ($category), ('</em></h1>');
             } else {
 
             $articles = $pages->find('blog')
