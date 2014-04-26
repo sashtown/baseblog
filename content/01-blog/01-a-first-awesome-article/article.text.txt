@@ -7,10 +7,10 @@ Description: This could be a first awesome article.
 Date: 2012-04-26
 
 ----
-Categories: Stuff
+Categories: Cool Stuff
 
 ----
-Text: 
+Text:
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 

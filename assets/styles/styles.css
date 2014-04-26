@@ -6,7 +6,7 @@
 *** Author: Sascha Lack
 *** Author URI: http://sashtown.de
 *** First release: May 2012
-*** Current release 1.1.4: January 2014
+*** Current release 1.1.5: April 2014
 *** Made for Kirby CMS [http://getkirby.com]
 
 ************************************************************************************************************************/
@@ -39,8 +39,11 @@ ol, ul {
 -------------------------------------------------------------- */
 
 html {
-    -webkit-font-smoothing: antialiased;
     height: 101%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 body {
     color: #333;

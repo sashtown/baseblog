@@ -7,10 +7,10 @@ Description: This could be a third awesome article.
 Date: 2013-03-12
 
 ----
-Categories: Tools, Stuff
+Categories: Tools, Cool Stuff
 
 ----
-Text: 
+Text:
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 

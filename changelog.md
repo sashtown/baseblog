@@ -1,5 +1,14 @@
 #Baseblog Changelog
 
+##1.1.5 (Apr 26, 2014)
+Some minor fixes and improvements.
+
+- Fixed filtering of categories containing spaces. [[#9](https://github.com/sashtown/Baseblog-Kirby-Theme/pull/9)]
+- Added a new category to showcase the filtering fix above.
+- Other minor template adjustments for `blog.php`.
+- Added some global typo styles to provide a better default.
+
+
 ##1.1.4 (Jan 20, 2014)
 Just a few fixes.
 

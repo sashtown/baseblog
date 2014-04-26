@@ -7,10 +7,10 @@ Description: This could be a second awesome article.
 Date: 2012-04-27
 
 ----
-Categories: News, Stuff, Media
+Categories: News, Cool Stuff, Media
 
 ----
-Text: 
+Text:
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 

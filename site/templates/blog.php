@@ -5,14 +5,15 @@
 	<main role="main">
         <?php if(param('category')) {   /*** article overview ***/
 
+            $category = urldecode(param('category'));
             $articles = $pages->find('blog')
                             ->children()
                             ->visible()
-                            ->filterBy('categories', param('category'), ',')
+                            ->filterBy('categories', $category, ',')
                             ->flip()
                             ->paginate(4);
 
-                            echo ('<h1 class="results">Category Archives: <em>'), (param('category')), ('</em></h1>');
+                            echo '<h1 class="results">Category Archives: <mark>', $category, '</mark></h1>';
             } else {
 
             $articles = $pages->find('blog')

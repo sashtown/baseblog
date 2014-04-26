@@ -2,7 +2,7 @@
 
 ----
 
-Description: This a nice simple blog template for Kirby. And it's responsive.
+Description: This a nice simple blog theme for Kirby.
 
 ----
 
