@@ -13,7 +13,7 @@
                             ->flip()
                             ->paginate(4);
 
-                            echo '<h1 class="results">Category Archives: <mark>', $category, '</mark></h1>';
+                            echo '<h1 class="results">Category archives: <mark>', $category, '</mark></h1>';
             } else {
 
             $articles = $pages->find('blog')
@@ -21,6 +21,8 @@
                             ->visible()
                             ->flip()
                             ->paginate(4);
+
+                            echo '<h1 class="vh">'. $page->title() .'</h1>';
         }?>
 
         <?php foreach($articles as $article): ?>

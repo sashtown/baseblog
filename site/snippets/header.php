@@ -36,6 +36,6 @@ Header Snippet for the Baseblog Kirby Theme
     <div class="site">
 
         <header id="top" class="branding" role="banner">
-            <a href="<?php echo url() ?>"><h1><?php echo html($site->title()) ?></h1></a>
+            <a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a>
             <p><?php echo html($site->description()) ?></p>
         </header>

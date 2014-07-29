@@ -1,5 +1,13 @@
 #Baseblog Changelog
 
+##1.1.6 (Jul 29, 2014)
+Some minor stuff.
+
+- Cleaned up some styles.
+- Dropped the crappy `<h1>` in the site's header.
+- Fixed some typos.
+
+
 ##1.1.5 (Apr 26, 2014)
 Some minor fixes and improvements.
 

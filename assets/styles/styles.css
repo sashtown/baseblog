@@ -6,7 +6,7 @@
 *** Author: Sascha Lack
 *** Author URI: http://sashtown.de
 *** First release: May 2012
-*** Current release 1.1.5: April 2014
+*** Current release 1.1.6: July 2014
 *** Made for Kirby CMS [http://getkirby.com]
 
 ************************************************************************************************************************/
@@ -24,7 +24,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/* HTML5 Hack for Oldtimers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, main, nav, section, summary {
     display: block;
@@ -62,18 +61,6 @@ body {
     padding: 0 15px;
     max-width: 750px;
 }
-.branding {
-    padding: 30px 0;
-}
-.colophon {
-    padding: 10px 0;
-    font-size: 0.8em;
-    line-height: 1.4em;
-    border-top: 1px solid #999;
-}
-.colophon p {
-    display: inline;
-}
 
 
 
@@ -97,14 +84,31 @@ a:focus {
 
 /* Header
 -------------------------------------------------------------- */
-
-.branding h1 {
+.branding {
+    padding: 30px 0;
+}
+.branding a {
     font-size: 2.7em;
+    line-height: 1.3em;
 }
 .branding p {
     font-size: 1.2em;
     line-height: 1.3em;
     color: #999;
+}
+
+
+
+/* Footer
+-------------------------------------------------------------- */
+.colophon {
+    padding: 10px 0;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    border-top: 1px solid #999;
+}
+.colophon p {
+    display: inline;
 }
 
 
