@@ -1,7 +1,4 @@
 .DS_Store
-.htaccess
-/index.php
-/kirby
-/panel
-/site/panel/accounts
-/thumbs
+/assets/avatars/
+/site/accounts/
+/site/cache

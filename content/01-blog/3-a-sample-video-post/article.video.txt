@@ -1,0 +1,33 @@
+Title:
+
+A sample video post
+
+----
+
+Description:
+
+This could be an awesome video post.
+
+----
+
+Date:
+
+08/07/2014
+
+----
+
+Tags:
+
+media, nature
+
+----
+
+Video:
+
+----
+
+Text:
+
+(vimeo: http://vimeo.com/35396305)
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

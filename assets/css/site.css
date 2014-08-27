@@ -1,0 +1,480 @@
+/***************************************************
+
+****** Baseblog | Kirby Theme ******
+
+*** URL: http://baseblog.sashtown.de
+*** Author: Sascha Lack
+*** Author URI: http://sashtown.de
+*** Made for Kirby CMS [http://getkirby.com]
+
+****************************************************/
+
+
+
+/*
+ :::  Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+
+
+
+/*
+ :::  Global
+-------------------------------------------------- */
+html {
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 45em;
+  color: #333;
+  background-color: #fff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 90%;
+}
+@media only screen and (min-width : 40em) {
+  body {
+    font-size: 100%;
+  }
+}
+main {
+  line-height: 1.7em;
+}
+
+
+
+/*
+ :::  Links
+-------------------------------------------------- */
+a:link,
+a:visited {
+  color: #dd4a38;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #333;
+}
+
+
+
+/*
+ :::  Site header
+-------------------------------------------------- */
+.site-header {
+  padding: 30px 0;
+}
+  .site-header a {
+    font-size: 2.7em;
+    line-height: 1.3em;
+  }
+  .site-header p {
+    margin-top: .25em;
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+
+
+
+/*
+ :::  Navigation
+-------------------------------------------------- */
+.menu {
+  margin-bottom: 5em;
+  background: #333;
+}
+  .menu li {
+    float: left;
+    display: inline-block;
+  }
+    .menu a {
+      display: block;
+      padding: 1em;
+      color: #fff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+      .menu a:hover {
+        background: #dd4a38;
+      }
+  @media only screen and (min-width : 40em) {
+    .menu ul {
+      float: left;
+    }
+  }
+
+
+
+/*
+ :::  Search
+-------------------------------------------------- */
+.search {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #666;
+}
+  .search input {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    font-size: inherit;
+    background: #333;
+    color: #fff;
+    font-family: inherit;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+@media only screen and (min-width : 40em) {
+  .search {
+    float: right;
+    width: 35%;
+    border-top: none;
+    border-left: 1px solid #666;
+  }
+    .search input {
+      height: 48px;
+    }
+}
+
+
+
+/*
+ :::  Results
+-------------------------------------------------- */
+.results {
+  margin-bottom: 5em;
+  border-bottom: 1px dashed #333;
+}
+  .results > li {
+    padding-bottom: 1em;
+    margin-bottom: .5em;
+    border-top: 1px dashed #333;
+  }
+    .results h2 {
+      font-size: 1.75em;
+      margin-bottom: .25em;
+      font-weight: 400;
+    }
+
+
+
+/*
+ :::  Results' heading
+-------------------------------------------------- */
+.result {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+  .result mark {
+    background: inherit;
+    color: inherit;
+  }
+
+
+
+/*
+ :::  Article basics
+-------------------------------------------------- */
+article {
+  margin-bottom: 5em;
+}
+  article header {
+    margin-bottom: 2em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #333;
+  }
+  article footer {
+    margin-top: 3em;
+  }
+  article p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+
+
+
+/*
+ :::  Article meta
+-------------------------------------------------- */
+.meta {
+  font-size: 0.8em;
+}
+
+
+
+/*
+ :::  Tags
+-------------------------------------------------- */
+.tags {
+  display: inline-block;
+}
+  .tags li {
+    display: inline-block;
+    margin-right: .25em;
+    text-transform: lowercase;
+  }
+
+
+
+/*
+ :::  Headings
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.3em;
+}
+h1 {
+  font-size: 2.15em;
+  margin-bottom: .25em;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.25em;
+  margin-bottom: .5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 1.1em;
+  margin-bottom: .5em;
+  font-weight: 700;
+}
+
+
+
+/*
+ :::  Blockquotes
+-------------------------------------------------- */
+blockquote {
+  margin-bottom: 2em;
+  padding: .5em 1em;
+  font-style: italic;
+  border-left: 10px solid #333;
+}
+  blockquote p:last-of-type {
+    margin-bottom: 0;
+  }
+
+
+
+/*
+ :::  Buttons
+-------------------------------------------------- */
+a.button {
+  display: inline-block;
+  background-color: #333;
+  padding: 1em;
+  color: #fff;
+}
+  a.button:hover {
+    background-color: #dd4a38;
+  }
+
+
+
+/*
+ :::  Code
+-------------------------------------------------- */
+.content pre {
+  margin-bottom: 2em;
+  padding: 2em;
+  background: #f5f5f5;
+  overflow: auto;
+}
+.content code {
+  font-family: 'Menlo', Courier, monospace;
+}
+.content p code {
+  background-color: #eee;
+}
+
+
+
+/*
+ :::  Unordered Lists
+-------------------------------------------------- */
+.content ul {
+  margin-bottom: 1.5em;
+  list-style: disc inside;
+}
+  .content ul ul,
+  .content ul ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+  }
+
+
+
+/*
+ :::  Ordered Lists
+-------------------------------------------------- */
+.content ol {
+  margin-bottom: 1.5em;
+  list-style: decimal inside;
+}
+  .content ol ul,
+  .content ol ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+  }
+
+
+
+/*
+ :::  Description Lists [Markdown extra feature]
+-------------------------------------------------- */
+.content dl {
+  margin-bottom: 1.5em;
+}
+  .content dt {
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+
+
+/*
+  :::  Tables [Markdown extra feature]
+-------------------------------------------------- */
+.content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 2rem;
+}
+  .content table th,
+  .content table td {
+    padding: .5rem 1rem;
+    background-color: #eee;
+    border: 2px solid #fff;
+  }
+  .content table th {
+    background-color: #ddd;
+  }
+
+
+
+/*
+ :::  Media
+-------------------------------------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+article figure {
+  margin-bottom: 1.5em;
+}
+article figcaption {
+  margin-top: .25em;
+  font-size: 0.8em;
+  color: #888;
+}
+
+
+
+/*
+ :::  Fluid video ratio via Kirbytext
+-------------------------------------------------- */
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: auto;
+  overflow: hidden;
+}
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+/*
+ :::  Pagination
+-------------------------------------------------- */
+.pagination {
+  margin: 3em 0 5em;
+}
+  .pagination .prev {
+    float: left;
+  }
+  .pagination .next {
+    float: right;
+  }
+
+
+
+/*
+ :::  Site footer
+-------------------------------------------------- */
+.site-footer {
+  padding: 1em 0;
+  font-size: 0.8em;
+  line-height: 1.5;
+  border-top: 1px solid #333;
+}
+
+
+
+/*
+ :::  Clearfix [cf]
+-------------------------------------------------- */
+.cf:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+
+/*
+ :::  Visually hidden [vh]
+-------------------------------------------------- */
+.vh {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

@@ -1,5 +1,9 @@
-﻿Title: Baseblog Article Feed
+Title:
+
+Feed
 
 ----
 
-Description: The blog feed for the Baseblog Theme.
+Description:
+
+The blog feed for Baseblog.

@@ -1,0 +1,77 @@
+Title:
+
+Typo
+
+----
+
+Description:
+
+Typography overview of Baseblog.
+
+----
+
+Text:
+
+Lorem ipsum dolor sit amet, consectetuer _adipiscing_ elit. Aenean commodo ligula eget dolor. Aenean massa. Cum **sociis natoque** penatibus et (link: http://sashtown.de text: magnis dis parturient) montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, `<pellentesque eu>`, pretium quis, sem. Nulla consequat massa quis enim.
+
+##Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+
+## Unordered list
+-   Lorem ipsum dolor
+-   Lorem ipsum dolor
+  -   Lorem ipsum dolor
+-   Lorem ipsum dolor
+
+
+## Ordered list
+1.  Lorem ipsum dolor
+2.  Lorem ipsum dolor
+3.  Lorem ipsum dolor
+
+
+## Description list
+
+A super nice definition term
+: Some delicious description to that super awesome thing above.
+
+A super nice definition term
+: Some delicious description to that super awesome thing above.
+
+A super nice definition term
+: Some delicious description to that super awesome thing above.
+
+
+## Blockquote
+
+> What a beautiful blockquote this is... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+
+
+## Simple table
+
+| Lorem ipsum           | Lorem ipsum           |
+| :-------------------- | --------------------: |
+| magnis dis parturient | magnis dis parturient |
+| magnis dis parturient | magnis dis parturient |
+| magnis dis parturient | magnis dis parturient |
+
+
+## Button
+
+(link: # text: Some button class: button)
+
+##Code block
+
+    article h1 {
+      font-size: 3em;
+      line-height: 1.7em;
+      margin: 10px 0;
+    }

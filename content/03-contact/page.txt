@@ -1,14 +1,23 @@
-Title: Contact
+Title:
+
+Contact
 
 ----
-Description: This could be a pretty nice contact page.
+
+Description:
+
+This could be an awesome contact page.
 
 ----
+
 Text:
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+Baseblog is made to give you a nice and clean start when it comes to creating a blog with Kirby. It allows you to setup your posts and pages quickly, so you can easily customize it and just start blogging right away.
 
-<mail@sashtown.de>
+If you have any questions about the theme don't hesitate to drop me a line.
 
-(twitter: @sashtown)
+<mail@sashtown.de> | (twitter: @sashtown)
 
+This theme is free to use with your (link: http://getkirby.com/buy text: Kirby license). If you still want to support its further development and say thanks you're welcome to do so by clicking the button below. It'll help you sending some bucks via PayPal.
+
+(link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9RBGZCYTNR2EC text: Buy this dude a protein shake class: button popup: yes)

@@ -1,4 +1,9 @@
-﻿Title: Search
+Title:
+
+Search
 
 ----
-Description: Baseblog Search
+
+Description:
+
+Search page for Baseblog.
