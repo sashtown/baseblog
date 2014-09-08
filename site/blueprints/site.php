@@ -3,6 +3,7 @@
 title: Site
 pages: 
   template:
+    - default
     - blog
     - feed
     - search
