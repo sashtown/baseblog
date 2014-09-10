@@ -1,5 +1,13 @@
 # Baseblog Changelog
 
+## 2.0.1 (Sep 10th, 2014)
+Minor stuff and fixes
+
+- Fixed the blueprints for blog and site [[#10]](https://github.com/sashtown/Baseblog-Kirby-Theme/pull/10)
+- Cleaned up the feed
+- Fixed a formatting in the license
+
+
 ## 2.0 (Aug 27th, 2014)
 Complete revision for Kirby 2
 

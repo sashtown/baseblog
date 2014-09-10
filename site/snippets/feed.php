@@ -1,8 +1,5 @@
 <?php
 
-// defaults
-if(!isset($descriptionExcerpt)) $descriptionExcerpt = true;
-
 // send the right header
 header('Content-type: text/xml; charset="utf-8"');
 
@@ -29,17 +26,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
     <item>
       <title><?php echo xml($item->title()) ?></title>
       <link><?php echo xml($item->url()) ?></link>
-      <guid isPermalink="true"><?php echo xml($item->url()) ?></guid>
+      <guid><?php echo xml($item->url()) ?></guid>
       <pubDate><?php echo ($item->date()) ? date('r', $item->date()) : date('r', $item->modified()) ?></pubDate>
-
-      <?php if(isset($descriptionField)): ?>
-      <?php if(!$descriptionExcerpt): ?>
       <description><![CDATA[<?php echo kirbytext($item->text()) ?>]]></description>
-      <?php else: ?>
-      <description><![CDATA[<?php echo excerpt($item->{$descriptionField}, (isset($descriptionLength)) ? $descriptionLength : 140) ?>]]></description>
-      <?php endif ?>
-      <?php endif ?>
-
     </item>
     <?php endforeach ?>
 
