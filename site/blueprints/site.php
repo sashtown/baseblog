@@ -1,7 +1,12 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Site
-pages: true
+pages: 
+  template:
+    - default
+    - blog
+    - feed
+    - search
 files: true
 fields:
   title:
