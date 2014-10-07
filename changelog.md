@@ -1,5 +1,14 @@
 # Baseblog Changelog
 
+
+## 2.0.2 (Oct 07th, 2014)
+New feed and some minor stuff
+
+- Added new feed plugin
+- Added new headline fields to the article blueprints
+- Fixed some minor stuff and a few typos
+
+
 ## 2.0.1 (Sep 10th, 2014)
 Minor stuff and fixes
 

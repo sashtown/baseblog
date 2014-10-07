@@ -4,6 +4,9 @@ title: Link post
 pages: false
 files: true
 fields:
+  articleMeta:
+    label: Article Meta
+    type: headline
   title:
     label: Title
     type:  text
@@ -20,6 +23,9 @@ fields:
   tags:
     label: Tags
     type:  tags
+  link Meta:
+    label: Link Meta
+    type: headline
   customlink:
     label: Customlink
     type:  url
@@ -29,8 +35,9 @@ fields:
     type:  text
     width: 1/2
     icon:  bookmark
-  line-a:
-    type: line
+  articleContent:
+    label: Article Content
+    type: headline
   text:
     label: Text
     type:  textarea

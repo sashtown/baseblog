@@ -1,7 +1,7 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Search
-pages: true
+pages: false
 files: true
 fields:
   title:
