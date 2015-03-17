@@ -6,15 +6,19 @@ pages:
     - default
 files: true
 fields:
+
+  siteMeta:
+    label: Site Meta
+    type: headline
   title:
-    label: Title
+    label: Site title
     type:  text
   description:
-    label: Description
+    label: Site description
     type:  text
     icon:  info-circle
   line-a:
-    type:  line
+    type: line
   info:
     label: Site info
     type:  textarea

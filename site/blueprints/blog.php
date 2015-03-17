@@ -10,6 +10,10 @@ pages:
     - article.video
 files: true
 fields:
+
+  pageMeta:
+    label: Page Meta
+    type: headline
   title:
     label: Title
     type:  text

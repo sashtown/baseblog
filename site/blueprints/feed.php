@@ -4,6 +4,10 @@ title: Feed
 pages: false
 files: false
 fields:
+
+  pageMeta:
+    label: Page Meta
+    type: headline
   title:
     label: Title
     type:  text

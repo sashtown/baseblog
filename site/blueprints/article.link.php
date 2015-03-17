@@ -4,6 +4,7 @@ title: Link post
 pages: false
 files: true
 fields:
+
   articleMeta:
     label: Article Meta
     type: headline
@@ -35,6 +36,7 @@ fields:
     type:  text
     width: 1/2
     icon:  bookmark
+
   articleContent:
     label: Article Content
     type: headline

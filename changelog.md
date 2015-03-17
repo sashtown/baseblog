@@ -1,6 +1,14 @@
 # Baseblog Changelog
 
 
+## 2.0.3 (Mar 17th, 2015)
+Minor fixes
+
+- Improved the blueprints
+- Modified the `.gitignore`
+- Deleted a redundant redirect entry in the `.htaccess`
+
+
 ## 2.0.2 (Oct 07th, 2014)
 New feed and some minor stuff
 

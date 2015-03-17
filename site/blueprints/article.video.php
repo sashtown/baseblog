@@ -4,6 +4,7 @@ title: Video post
 pages: false
 files: true
 fields:
+
   articleMeta:
     label: Article Meta
     type: headline
@@ -23,6 +24,7 @@ fields:
   tags:
     label: Tags
     type:  tags
+
   articleContent:
     label: Article Content
     type: headline
