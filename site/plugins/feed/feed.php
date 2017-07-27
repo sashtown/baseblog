@@ -37,7 +37,7 @@ Pages::$methods['feed'] = function($pages, $params = array()) {
   if($options['datefield'] == 'modified') {
     $options['modified'] = $items->first()->modified();
   } else {
-    $options['modified'] = $items->first()->date(false, $options['datefield']);
+    $options['modified'] = $items->first()->date(null, $options['datefield']);
   }
 
   // send the xml header
