@@ -1,6 +1,6 @@
-  <footer class="site-footer" role="contentinfo">
-    <?php echo kirbytext($site->info()) ?>
-  </footer>
+    <footer class="site-footer" role="contentinfo">
+      <?= $site->info()->kt() ?>
+    </footer>
 
-</body>
+  </body>
 </html>

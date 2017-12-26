@@ -1,8 +1,8 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Text post
+
 pages: false
 files: true
+
 fields:
 
   articleMeta:

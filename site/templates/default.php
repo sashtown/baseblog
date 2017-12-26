@@ -1,17 +1,17 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
 
-	<main role="main">
+  <main role="main">
 
-		<article>
+    <article>
       <header>
-        <h1><?php echo html($page->title()) ?></h1>
+        <h1><?= $page->title()->html() ?></h1>
       </header>
-			<div class="content">
-        <?php echo kirbytext($page->text()) ?>
+      <div class="content">
+        <?= $page->text()->kt() ?>
       </div>
-		</article>
+    </article>
 
-	</main>
+  </main>
 
 <?php snippet('footer') ?>
