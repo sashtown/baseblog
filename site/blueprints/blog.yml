@@ -1,6 +1,5 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Blog
+
 pages:
   limit: 10
   sort: flip
@@ -9,6 +8,7 @@ pages:
     - article.link
     - article.video
 files: true
+
 fields:
 
   pageMeta:

@@ -1,8 +1,8 @@
-<?php if(!defined('KIRBY')) exit ?>
+title: Feed
 
-title: Search
 pages: false
-files: true
+files: false
+
 fields:
 
   pageMeta:

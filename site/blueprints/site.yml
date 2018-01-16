@@ -1,10 +1,10 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Site
+
 pages:
   template:
     - default
 files: true
+
 fields:
 
   siteMeta:

@@ -1,8 +1,8 @@
-<?php if(!defined('KIRBY')) exit ?>
+title: Video post
 
-title: Link post
 pages: false
 files: true
+
 fields:
 
   articleMeta:
@@ -24,18 +24,6 @@ fields:
   tags:
     label: Tags
     type:  tags
-  link Meta:
-    label: Link Meta
-    type: headline
-  customlink:
-    label: Customlink
-    type:  url
-    width: 1/2
-  linktitle:
-    label: Linktitle
-    type:  text
-    width: 1/2
-    icon:  bookmark
 
   articleContent:
     label: Article Content
